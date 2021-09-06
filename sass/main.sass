@@ -30,19 +30,157 @@ body textarea:required:valid
 
 body
 	margin: 0
+	line-height: 1.6
 	//background-color: #ffc107
 
 @import "settings"
 
 
 header
+	position: absolute
+	z-index: 10
+	width: 100%
+	padding: 40px 0
 	.logo
 		display: inline-flex
 		.svg-icon
 			max-width: 180px
+	.top-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
 
 .main-banner
 	background-color: $blue-color
+	height: 100vh
+	position: relative
+	&::after
+		content: ""
+		position: absolute
+		top: 0
+		height: 100%
+		width: 990px
+		left: calc(50% - 545px)
+		background-image: url("../img/stroke-main-banner.png")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+
+	.main-content
+		position: relative
+		z-index: 10
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-grow: 1
+		.context-block
+			padding-top: 60px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			max-width: 562px
+			.main-title
+				color: $white-color
+			.middle-description
+				color: $white-color
+			.form-wrapper
+				display: flex
+				flex-direction: column
+				margin-top: 40px
+				max-width: 450px
+				.form-all
+					border: none
+					margin: 0
+				.form-section
+					padding: 32px 36px
+					background-color: rgba(255, 51, 177, 1)
+					.form-header-group
+						padding: 0
+						margin: 0
+						border: none
+					.form-header
+						font-family: 'itc-avant-garde-gothic-pro', sans-serif
+						font-weight: 700
+						color: $white-color
+						font-size: 24px
+						line-height: 28px
+						letter-spacing: 0.01em
+					.form-subHeader
+						margin-bottom: 12px
+					.form-subHeader,
+					.form-label
+						font-family: "Avenir Medium", sans-serif
+						font-weight: 500
+						font-size: 14px
+						line-height: 20px
+						color: $white-color
+						letter-spacing: 0.01em
+					.form-textbox
+						font-family: "Avenir Medium", sans-serif
+						font-weight: 500
+						font-size: 16px
+						line-height: 24px
+						letter-spacing: 0.01em
+						height: 34px
+						color: rgba(148, 163, 184, 1)
+						padding-left: 10px!important
+						&:focus-visible
+							outline: none
+						&::-webkit-input-placeholder
+							font-size: 16px
+							color: rgba(148, 163, 184, 1)
+						&:-moz-placeholder
+							font-size: 16px
+							color: rgba(148, 163, 184, 1)
+						&::-moz-placeholder
+							font-size: 16px
+							color: rgba(148, 163, 184, 1)
+						&:-ms-input-placeholder
+							font-size: 16px
+							color: rgba(148, 163, 184, 1)
+						&::placeholder
+							font-size: 16px
+							color: rgba(148, 163, 184, 1)
+					.form-line
+						margin: 0!important
+						padding: 0
+						&.little-indent
+							margin-bottom: 10px!important
+					.form-label-top
+						margin-bottom: 0
+					.form-line-error
+						background-color: transparent
+					.bottom-horizont-section
+						width: 100%
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						margin-top: 14px
+						.form-radio-wrapper
+							width: 250px
+						.form-buttons-wrapper
+							margin: 0
+							padding: 0
+							border: none
+						.form-button-wrapper
+							display: flex
+							flex-direction: column
+							justify-content: flex-end
+							width: initial
+							.button
+								min-width: initial
+								margin-left: 0
+		.img-block
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			padding-top: 60px
+			img
+				display: block
+				min-height: 100%
+				object-fit: contain
+				object-position: bottom
 
 
 //ALWAYS END

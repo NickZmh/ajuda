@@ -23,18 +23,213 @@ body textarea:required:valid {
   color: #666; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.6; }
 
 .svg-icon {
   display: inline-flex; }
 
-header .logo {
-  display: inline-flex; }
-  header .logo .svg-icon {
-    max-width: 180px; }
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+h1, h3, h4, h4, h5, h6, p {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+button {
+  outline: none;
+  border: none; }
+
+.color-white {
+  color: #ffffff; }
+
+.h-100 {
+  height: 100%; }
+
+.button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Avenir Medium", sans-serif;
+  font-weight: 500;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+  .button.oval {
+    border-radius: 100px; }
+  .button.pink-color {
+    background-color: #ff009e; }
+
+.main-title {
+  font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.01em; }
+
+.middle-description {
+  font-family: "Avenir Medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em; }
+
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 40px 0; }
+  header .logo {
+    display: inline-flex; }
+    header .logo .svg-icon {
+      max-width: 180px; }
+  header .top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
 
 .main-banner {
-  background-color: #3e06de; }
+  background-color: #3e06de;
+  height: 100vh;
+  position: relative; }
+  .main-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 990px;
+    left: calc(50% - 545px);
+    background-image: url("../img/stroke-main-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .main-banner .main-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1; }
+    .main-banner .main-content .context-block {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 562px; }
+      .main-banner .main-content .context-block .main-title {
+        color: #ffffff; }
+      .main-banner .main-content .context-block .middle-description {
+        color: #ffffff; }
+      .main-banner .main-content .context-block .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        max-width: 450px; }
+        .main-banner .main-content .context-block .form-wrapper .form-all {
+          border: none;
+          margin: 0; }
+        .main-banner .main-content .context-block .form-wrapper .form-section {
+          padding: 32px 36px;
+          background-color: #ff33b1; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-header-group {
+            padding: 0;
+            margin: 0;
+            border: none; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-header {
+            font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.01em; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-subHeader {
+            margin-bottom: 12px; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-subHeader,
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-label {
+            font-family: "Avenir Medium", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+            letter-spacing: 0.01em; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox {
+            font-family: "Avenir Medium", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            height: 34px;
+            color: #94a3b8;
+            padding-left: 10px !important; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox:focus-visible {
+              outline: none; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox::-webkit-input-placeholder {
+              font-size: 16px;
+              color: #94a3b8; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox:-moz-placeholder {
+              font-size: 16px;
+              color: #94a3b8; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox::-moz-placeholder {
+              font-size: 16px;
+              color: #94a3b8; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox:-ms-input-placeholder {
+              font-size: 16px;
+              color: #94a3b8; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-textbox::placeholder {
+              font-size: 16px;
+              color: #94a3b8; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-line {
+            margin: 0 !important;
+            padding: 0; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .form-line.little-indent {
+              margin-bottom: 10px !important; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-label-top {
+            margin-bottom: 0; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .form-line-error {
+            background-color: transparent; }
+          .main-banner .main-content .context-block .form-wrapper .form-section .bottom-horizont-section {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 14px; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .bottom-horizont-section .form-radio-wrapper {
+              width: 250px; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .bottom-horizont-section .form-buttons-wrapper {
+              margin: 0;
+              padding: 0;
+              border: none; }
+            .main-banner .main-content .context-block .form-wrapper .form-section .bottom-horizont-section .form-button-wrapper {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              width: initial; }
+              .main-banner .main-content .context-block .form-wrapper .form-section .bottom-horizont-section .form-button-wrapper .button {
+                min-width: initial;
+                margin-left: 0; }
+    .main-banner .main-content .img-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-top: 60px; }
+      .main-banner .main-content .img-block img {
+        display: block;
+        min-height: 100%;
+        object-fit: contain;
+        object-position: bottom; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -91,7 +286,10 @@ header .logo {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /**/ }
+  .container,
+  .container-lg,
+  .container-xl {
+    max-width: 1370px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

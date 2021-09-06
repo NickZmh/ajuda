@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("../fonts/Avenir/AvenirLight/AvenirLTStd-Light.eot");
+  src: url("../fonts/Avenir/AvenirLight/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/AvenirLight/AvenirLTStd-Light.woff2") format("woff2"), url("../fonts/Avenir/AvenirLight/AvenirLTStd-Light.woff") format("woff"), url("../fonts/Avenir/AvenirLight/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE; }
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url("../fonts/Avenir/AvenirMedium/AvenirMedium.eot");
+  src: url("../fonts/Avenir/AvenirMedium/AvenirMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/AvenirMedium/AvenirMedium.woff2") format("woff2"), url("../fonts/Avenir/AvenirMedium/AvenirMedium.woff") format("woff"), url("../fonts/Avenir/AvenirMedium/AvenirMedium.svg#AvenirMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC; }
+
+@font-face {
+  font-family: 'Avenir Black';
+  src: url("../fonts/Avenir/AvenirBlack/AvenirBlack.eot");
+  src: url("../fonts/Avenir/AvenirBlack/AvenirBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/AvenirBlack/AvenirBlack.woff2") format("woff2"), url("../fonts/Avenir/AvenirBlack/AvenirBlack.woff") format("woff"), url("../fonts/Avenir/AvenirBlack/AvenirBlack.svg#AvenirBlack") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC; }
