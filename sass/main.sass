@@ -1,0 +1,49 @@
+
+@import "vars.sass"
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+body
+	margin: 0
+	//background-color: #ffc107
+
+@import "settings"
+
+
+header
+	.logo
+		display: inline-flex
+		.svg-icon
+			max-width: 180px
+
+.main-banner
+	background-color: $blue-color
+
+
+//ALWAYS END
+@import "media"
