@@ -527,8 +527,8 @@ header {
             color: #FF009E;
             letter-spacing: 0.01em; }
           .about-us .tile-block .tile-body .tile .context-block .subtitle {
-            font-family: "Avenir Medium", sans-serif;
-            font-weight: 500;
+            font-family: "Avenir Black", sans-serif;
+            font-weight: 900;
             font-size: 16px;
             line-height: 20px;
             color: #0C012C;
@@ -542,6 +542,24 @@ header {
             color: #0C012C;
             letter-spacing: 0.01em; }
 
+footer {
+  padding: 40px 0;
+  background-color: #3E06DE; }
+  footer .logo {
+    width: 160px; }
+  footer .bottom-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  footer .mail {
+    font-family: "Avenir Medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #ffffff; }
+
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-height: 900px) {
   .main-banner .main-content .context-block {
@@ -553,17 +571,31 @@ header {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .main-banner .main-content .context-block {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .about-us .tile-block {
+    max-width: 540px; }
+    .about-us .tile-block .tile-body .tile .img-wrapper {
+      min-width: 195px; }
+  .about-us .text-block {
+    max-width: 306px; } }
 
 @media only screen and (max-width: 1100px) {
   .main-banner .main-content .img-block {
     margin-left: -60px; }
   .benefits .benefits-list .list-item .text-side .description {
     font-size: 22px;
-    line-height: 32px; } }
+    line-height: 32px; }
+  .about-us .tile-block {
+    max-width: 490px; }
+    .about-us .tile-block .tile-body .tile .img-wrapper {
+      min-width: 195px; }
+  .about-us .text-block {
+    max-width: 306px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .logo {
+    width: 160px; }
   .main-banner .main-content .context-block {
     min-width: 445px;
     margin-right: 0;
@@ -606,7 +638,33 @@ header {
         left: -30px;
         width: 20px;
         height: 58px;
-        bottom: -45px; } }
+        bottom: -45px; }
+  .about-us {
+    padding: 130px 0 100px; }
+    .about-us .content-block {
+      flex-direction: column;
+      align-items: center; }
+    .about-us .middle-title {
+      font-size: 32px;
+      line-height: 34px; }
+    .about-us .tile-block {
+      max-width: 600px; }
+      .about-us .tile-block .tile-body {
+        margin-bottom: 30px; }
+        .about-us .tile-block .tile-body .tile .img-wrapper {
+          min-width: 195px; }
+    .about-us .text-block {
+      max-width: 530px; }
+      .about-us .text-block .top-block {
+        text-align: center;
+        margin-bottom: 70px; }
+    .about-us .bottom-block {
+      text-align: center;
+      margin-top: 60px; }
+      .about-us .bottom-block .subtitle {
+        margin-bottom: 10px; }
+    .about-us .desktop {
+      display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -642,6 +700,7 @@ header {
   .benefits .benefits-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%; }
     .benefits .benefits-list .list-item {
       max-width: 480px;
@@ -656,7 +715,14 @@ header {
       .benefits .benefits-list .list-item .img-side {
         width: 100%; }
         .benefits .benefits-list .list-item .img-side.left-arrow::after, .benefits .benefits-list .list-item .img-side.right-arrow::after {
-          width: 0; } }
+          width: 0; }
+  footer {
+    padding: 50px 0; }
+    footer .bottom-line {
+      flex-direction: column; }
+      footer .bottom-line .logo,
+      footer .bottom-line .button {
+        margin-bottom: 30px; } }
 
 @media only screen and (max-width: 690px) {
   .main-banner .main-content .img-block {
@@ -771,7 +837,40 @@ header {
         line-height: 44px; }
       .benefits .benefits-list .list-item .text-side .description {
         font-size: 16px;
-        line-height: 20px; } }
+        line-height: 20px; }
+  .about-us {
+    padding: 80px 0; }
+    .about-us::before {
+      background-image: url("../img/bg-about-us-mobile.png");
+      background-position: left; }
+    .about-us .middle-title {
+      font-size: 20px;
+      line-height: 24px; }
+    .about-us .description {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .about-us .content-block {
+      align-items: flex-start; }
+    .about-us .text-block .top-block {
+      text-align: left;
+      margin-bottom: 50px; }
+    .about-us .tile-block .tile-body .tile .context-block {
+      padding: 12px; }
+      .about-us .tile-block .tile-body .tile .context-block .title {
+        font-size: 20px;
+        line-height: 24px; }
+      .about-us .tile-block .tile-body .tile .context-block .subtitle {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 10px; }
+    .about-us .tile-block .tile-body .tile .img-wrapper {
+      min-width: 165px; }
+    .about-us .bottom-block {
+      text-align: left; }
+      .about-us .bottom-block .subtitle {
+        margin-bottom: 8px; }
+  footer .logo {
+    width: 120px; } }
 
 @media only screen and (max-width: 480px) {
   .main-banner .main-content .context-block .top-block .img-mobile {
@@ -782,7 +881,17 @@ header {
   .main-banner .main-content .context-block .top-block .text-block {
     min-width: 220px; }
   .main-banner .main-content .context-block .middle-description {
-    padding-right: 45px; } }
+    padding-right: 45px; }
+  .about-us .tile-block .tile-body .tile {
+    flex-direction: column; }
+    .about-us .tile-block .tile-body .tile .context-block {
+      padding: 16px; }
+    .about-us .tile-block .tile-body .tile .img-wrapper {
+      height: 320px; }
+      .about-us .tile-block .tile-body .tile .img-wrapper img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 375px) {
@@ -816,7 +925,9 @@ header {
   .container,
   .container-lg,
   .container-xl {
-    max-width: 1370px; } }
+    max-width: 1370px; }
+  .about-us .bottom-block.mobile {
+    display: none; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
