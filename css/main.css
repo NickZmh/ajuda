@@ -937,10 +937,14 @@ footer {
   .benefits .content-block {
     padding: 0 40px; } }
 
-@media (min-width: 1200px) and (min-height: 900px) {
+@media (min-width: 1140px) and (min-height: 800px) {
   .main-banner {
     height: 100vh; }
   .benefits {
-    height: 100vh; }
+    height: 100vh;
+    padding: 60px 0; }
   .about-us {
-    height: 100vh; } }
+    height: 100vh;
+    padding: 60px 0; }
+  .bottom-arrow-wrapper {
+    bottom: 35px; } }
